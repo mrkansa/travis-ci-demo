@@ -1,5 +1,8 @@
 language:java
-java: - "stable"
+java: 
+   - "stable"
+jdk: 
+
 script: 
 env:
 
