@@ -16,5 +16,18 @@ matrix:
 
 script: ./.travis.sh
 
+stages:
+  - compile
+  - test
+  - deploy
+#env:
+#  - FOO=one
+#  - FOO=two
 
+jobs:
+  include:
+    - stage: compile
+      script: ./compile
+    - stage: deploy
+      script: ./deploy
 
